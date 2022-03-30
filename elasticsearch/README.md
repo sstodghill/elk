@@ -1,5 +1,9 @@
 # Elasticsearch Helm Chart
 
+## Note on Ubuntu
+If pods fail to come up with VM error run
+`$ sudo sysctl -w vm.max_map_count=262144`
+
 [![Build Status](https://img.shields.io/jenkins/s/https/devops-ci.elastic.co/job/elastic+helm-charts+master.svg)](https://devops-ci.elastic.co/job/elastic+helm-charts+master/) [![Artifact HUB](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/elastic)](https://artifacthub.io/packages/search?repo=elastic)
 
 This Helm chart is a lightweight way to configure and run our official
