@@ -2,7 +2,8 @@
 
 ## Note on Ubuntu
 If pods fail to come up with VM error run
-`$ sudo sysctl -w vm.max_map_count=262144`
+`$ sudo sysctl -w vm.max_map_count=262144
+$ sudo echo "vm.max_map_count=262144" > /etc/sysctl.d/99-vm.conf`
 
 [![Build Status](https://img.shields.io/jenkins/s/https/devops-ci.elastic.co/job/elastic+helm-charts+master.svg)](https://devops-ci.elastic.co/job/elastic+helm-charts+master/) [![Artifact HUB](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/elastic)](https://artifacthub.io/packages/search?repo=elastic)
 
